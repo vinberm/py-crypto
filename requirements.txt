@@ -2,3 +2,4 @@ py_ecc
 rlp>=0.4.7
 pysha3>=1.0.1
 pytest>=3.2.2
+pyblake2==1.1.0

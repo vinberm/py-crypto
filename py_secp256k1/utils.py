@@ -19,17 +19,9 @@ def int_to_big_endian(x):
     return big_endian_int.serialize(x) # Serialize interger to big endian
 
 def zpad(x, l):
-    """ Left zero pad value `x` at least to length `l`.
-
-    >>> zpad('', 1)
-    '\x00'
-    >>> zpad('\xca\xfe', 4)
-    '\x00\x00\xca\xfe'
-    >>> zpad('\xff', 1)
-    '\xff'
-    >>> zpad('\xca\xfe', 2)
-    '\xca\xfe'
-    """
+    '''
+    Left zero pad value `x` at least to length `l`.
+    '''
     return b'\x00' * max(0, l - len(x)) + x
 
 def decode_hex(s):
@@ -57,14 +49,10 @@ def normalize_key(key):
 def sha3(seed):
     return sha3_256(to_string(seed))
 
-if sys.version_info.major == 2:
-    def to_string(value):
-        return str(value)
-else:
-    def to_string(value):
-        if isinstance(value, bytes):
-            return value
-        if isinstance(value, str):
-            return bytes(value, 'utf-8')
-        if isinstance(value, int):
-            return bytes(str(value), 'utf-8')
+def to_string(value):
+    if isinstance(value, bytes):
+        return value
+    if isinstance(value, str):
+        return bytes(value, 'utf-8')
+    if isinstance(value, int):
+        return bytes(str(value), 'utf-8')
