@@ -1,7 +1,7 @@
 ## RLP(Recursive Length Prefix)
-    RLP是Ethereum中主要的序列化和反序列化方法。
-    具体参考[Ethereum RLP wiki](https://github.com/ethereum/wiki/wiki/RLP)
-    [Source code](https://github.com/ethereum/pyrlp)
+   RLP是Ethereum中主要的序列化和反序列化方法。
+   具体参考 [Ethereum RLP wiki](https://github.com/ethereum/wiki/wiki/RLP)
+   [Source code](https://github.com/ethereum/pyrlp)
 
 ### RLP is defined as follows:
 
