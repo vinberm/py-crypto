@@ -1,6 +1,6 @@
 from py_ecc.secp256k1 import privtopub, ecdsa_raw_recover, ecdsa_raw_sign
 
-from py_secp256k1.utils import encode_int32, normalize_key, sha3
+from crypto.utils import encode_int32, normalize_key, sha3
 
 
 def ecrecover_to_pub(rawhash, v, r, s):

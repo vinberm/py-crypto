@@ -1,6 +1,6 @@
 from _pysha3 import sha3_256, keccak_256
 from pyblake2 import blake2b, blake2s
-from py_secp256k1.utils import sha3
+from crypto.utils import sha3
 import binascii
 
 '''

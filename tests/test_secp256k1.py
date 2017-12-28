@@ -1,4 +1,4 @@
-from py_secp256k1.secp256k1_utils import ecrecover_to_pub, ecsign, priv_to_pub
+from crypto.secp256k1_utils import ecrecover_to_pub, ecsign, priv_to_pub
 import binascii
 
 priv = binascii.unhexlify('792eca682b890b31356247f2b04662bff448b6bb19ea1c8ab48da222c894ef9b')
